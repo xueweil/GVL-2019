@@ -1,0 +1,48 @@
+## how to normalize the metabolites?
+a reference compound 922 was used during the generation of raw files
+
+##Connecting to the super computer from Metabolomic lab
+
+1. Open Finder, select Go on the top of screen, select "Connect to Server"
+
+2. Copy and past the following:
+
+las-dfs-01.las.iastate.edu/lss/research/mperera-lab
+
+3. login with username:IASTATE\xueweil, and my netid password
+
+## notes for terminal:
+
+#create a file in a certain directory:
+vi week2.txt
+
+#start insert:
+i
+
+#save an exit:
+esc -> shift+zz
+
+#to view a file in current window:
+more week2.txt
+
+#to show me the current working directory pathway:
+pwd
+
+#to copy a file in current in current directory into a new directory:
+cp week2.txt /Users/xuewei/Desktop
+
+#to delete a file from another directory:
+rm /Users/xuewei/Desktop/week2.txt
+
+#to summarize a file(#of columns, #of rows, #of words):
+wc week2.txt
+
+#to show a file:??
+   87  sort -nk 2 week2.txt
+   88  sort -rnk 2 week2.txt
+
+#to export the the row with a certain letter or word:
+grep w week2.txt
+
+#to export the columns when the columns number is known:
+awk '{print $1, $4}' week2.txt
