@@ -22,6 +22,17 @@ i
 #save an exit:
 esc -> shift+zz
 
+esc -> shift:wq
+
+#save changes and not exit
+esc -> shift:w
+
+#exit while didn't make any changes
+esc -> shift:q
+
+#exit while undo changes
+esc -> shift:q!
+
 #to view a file in current window:
 more week2.txt
 
